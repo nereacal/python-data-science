@@ -1,6 +1,4 @@
 import pandas as pd
-import matplotlib
-import scipy
 import numpy as np
 import requests
 
@@ -42,4 +40,11 @@ df=df1.dropna(subset=["price"], axis=0)
 df.head(20)
 
 # Save dataset
+# index=False means the row names will not be written
 df.to_csv("automobile.csv", index=False)
+
+
+# Rename columns
+df = df.rename(columns={'oldName1': 'newName1', 'oldName2': 'newName2'})
+# Or rename the existing DataFrame (rather than creating a copy) 
+df.rename(columns={'oldName1': 'newName1', 'oldName2': 'newName2'}, inplace=True)
