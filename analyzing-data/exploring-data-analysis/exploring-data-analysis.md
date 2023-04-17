@@ -47,9 +47,28 @@ Approach to analyze data in order to summarize main characteristics of the data 
 > ![](https://github.com/nereacal/python-data-science/blob/main/analyzing-data/images/StrongWeak_Positive_Correlation.jpeg)  
 >
 
+> ### Correlation statistics
+> -------------  
+> Measure the strength of the correlation between 2 features.
+> Pearson's correlation will give 2 values: the correlation coefficient and the P-value.  
+>> **Correlation coefficients**:  
+>> - Close to +1: Large Positive relationship
+>> - Close to -1: Large Negative relationship 
+>> - Close to 0: No Relationship
+>
+>> **P-value**:  
+>> - P-value < 0.001 Strong certainly in the result.  
+>> - P-value < 0.05 Moderate certainly in the result. 
+>> - P-value < 0.1 Weak certainly in the result.
+>> - P-value > 0.1 No certainly in the result.  
+>
+>> **Strong correlation**: 
+>> - Correlation coefficient close to 1 or -1
+>> - P value less than 0.001  
+>
+> ``pearson_coef, p_value = stats.pearsonr(df['horsepower'], df['price'])``
+>
 
 
 
 
-- Correlation
-- Correlation statistics
