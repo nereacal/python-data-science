@@ -7,10 +7,19 @@ Approach to analyze data in order to summarize main characteristics of the data 
 > ### Descriptive statistics  
 > ------------------------
 > To obtain a short summary about the sample and measures of the data.  
-> - **describe()** funtion in panda and appliying it to a dataframe will automatically compute basic statistics for all numberical variables.  
-> Any NaN values will be skipped  
-> - **value_counts()** function to summarize the quantity of each value in the dataframe.  
-> - **boxplot()** function display outliers as individuals dots that occur outside the upper and lower extremes.
+>> **describe()** funtion in panda and appliying it to a dataframe will automatically compute basic statistics for all numberical variables.  
+>> Any NaN values will be skipped  
+>> This will show:
+>> - count of that variable
+>> - the mean
+>> - the standard deviation (std)
+>> - the minimum value
+>> - the IQR (Interquartile Range: 25%, 50% and 75%)
+>> - the maximum value
+>  
+>> **value_counts()** function to summarize the quantity of each value in the dataframe.  
+>  
+>> **boxplot()** function display outliers as individuals dots that occur outside the upper and lower extremes.
 
 
 > ### GroupBy  
@@ -57,17 +66,28 @@ Approach to analyze data in order to summarize main characteristics of the data 
 >> - Close to 0: No Relationship
 >
 >> **P-value**:  
+>> The P-value is the probability value that the correlation between these two variables is statistically significant. 
 >> - P-value < 0.001 Strong certainly in the result.  
 >> - P-value < 0.05 Moderate certainly in the result. 
 >> - P-value < 0.1 Weak certainly in the result.
 >> - P-value > 0.1 No certainly in the result.  
->
+>>
 >> **Strong correlation**: 
 >> - Correlation coefficient close to 1 or -1
 >> - P value less than 0.001  
 >
 > ``pearson_coef, p_value = stats.pearsonr(df['horsepower'], df['price'])``
 >
+> 
+> **ANOVA: Analysis of Variance**
+> The Analysis of Variance (ANOVA) is a statistical method used to test whether there are significant differences between the means of two or more groups. ANOVA returns two parameters:
+> - **F-test score**: ANOVA assumes the means of all groups are the same, calculates how much the actual means deviate from the assumption, and reports it as the F-test score. A larger score means there is a larger difference between the means.  
+> - **P-value**: P-value tells how statistically significant our calculated score value is.  
+> 
+> *Since ANOVA analyzes the difference between different groups of the same variable, the groupby function will come in handy. Because the ANOVA algorithm averages the data automatically, we do not need to take the average before hand.*  
+> To see if different types of 'drive-wheels' impact 'price', we group the data: ``grouped_test2=df_gptest[['drive-wheels', 'price']].groupby(['drive-wheels'])``
+>
+
 
 
 
