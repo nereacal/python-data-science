@@ -44,8 +44,8 @@ Approach to analyze data in order to summarize main characteristics of the data 
 > Use seaborn.regplot to create the scatter plot.  
 > *A weak positive correlation indicates that, although both variables tend to go up in response to one another, the relationship is not very strong.*  
 > *A strong negative correlation, on the other hand, indicates a strong connection between the two variables, but that one goes up whenever the other one goes down.*  
-> ![](C:\Users\nerea\pythonProjects\python-data-science\analyzing-data\images\StrongWeak_Positive_Correlation.jpeg)  
-> <img src="C:\Users\nerea\pythonProjects\python-data-science\analyzing-data\images\StrongWeak_Positive_Correlation.jpeg" alt="Correlation" width="300px">
+> ![](https://github.com/nereacal/python-data-science/blob/main/analyzing-data/images/StrongWeak_Positive_Correlation.jpeg)  
+> <img src="https://github.com/nereacal/python-data-science/blob/main/analyzing-data/images/StrongWeak_Positive_Correlation.jpeg" alt="Correlation" width="300px">
 >
 > hhgf
 
