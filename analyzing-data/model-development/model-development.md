@@ -1,4 +1,4 @@
-# Model development
+# [Model development](https://learning.edx.org/course/course-v1:IBM+DA0101EN+2T2021/block-v1:IBM+DA0101EN+2T2021+type@sequential+block@800e4cca79f2494fa1d8f6798264fa55)
 
 - Simple and multiple linear regression
 - model evaluation using visualization
@@ -10,7 +10,7 @@ Model development: mathematical equation used to predict a value given one or mo
 In a regression plot, the horizontal axis represents the independent variable and the vertical axis represents the dependent variable.
 
 
-## Linear Regression
+## [Linear Regression](https://learning.edx.org/course/course-v1:IBM+DA0101EN+2T2021/block-v1:IBM+DA0101EN+2T2021+type@sequential+block@a130399577f64860b2fe48ce93ab4d79)
 -----
 First we fit a simple linear model and then we obtain a prediction.  
 Define the predictor variable and target variable:  
@@ -28,7 +28,7 @@ Yhat = lm.predict(X)
 ``` 
 
 
-## Multiple Linear Regression
+## [Multiple Linear Regression](https://learning.edx.org/course/course-v1:IBM+DA0101EN+2T2021/block-v1:IBM+DA0101EN+2T2021+type@sequential+block@a130399577f64860b2fe48ce93ab4d79)
 ----
 Used to explain relationships between one continuous target y variable and 2 or more predictor x variables.  
 Extract 4 predictor variables and store them in z variable then train the model and obtain the prediction:
@@ -39,7 +39,7 @@ Yhat = lm.predict(X)
 ```
 
 
-## Model Evaluation using Visualization
+## [Model Evaluation using Visualization](https://learning.edx.org/course/course-v1:IBM+DA0101EN+2T2021/block-v1:IBM+DA0101EN+2T2021+type@sequential+block@954d64792ac4444ab1096cc71fc1b781)
 ---
 
 **Regression plot**:  
@@ -74,7 +74,7 @@ sns.distplot(Yhat, hist=False, color='b', label='Fitted Values', ax=ax1)
 ```
 
 
-## Polynomial Regression and Pipelines
+## [Polynomial Regression and Pipelines](https://learning.edx.org/course/course-v1:IBM+DA0101EN+2T2021/block-v1:IBM+DA0101EN+2T2021+type@sequential+block@0455ee32a752493092241d88187fc2aa)
 ----  
 The polynomial regression is a special case of the general linear regression model and useful for describes curvilinear relationships (is what you get by squaring or getting higher order terms of the predictor variables in the model transforming the data).  
 Types of polynomial regression:  
@@ -131,7 +131,7 @@ pipe.fit(df[['horsepower', 'highway-mpg', 'curb-weight', 'engine-size']], y)
 yhat = pipe.predict(x[['horsepower', 'highway-mpg', 'curb-weight', 'engine-size']])
 ```
 
-## Measures for in-sample evaluation
+## [Measures for in-sample evaluation](https://learning.edx.org/course/course-v1:IBM+DA0101EN+2T2021/block-v1:IBM+DA0101EN+2T2021+type@sequential+block@3c4c9d90218c4161b4fb7f92dede422c)
 ----  
 A way to numerical determine how good the model fits the model.
 2 important measures:
@@ -140,3 +140,12 @@ A way to numerical determine how good the model fits the model.
 
 > ![](https://github.com/nereacal/python-data-science/blob/main/analyzing-data/images/Coefficient_of_determination_r2.jpeg)  
   
+
+## [Prediction and decision making](https://learning.edx.org/course/course-v1:IBM+DA0101EN+2T2021/block-v1:IBM+DA0101EN+2T2021+type@sequential+block@1ebfc992c53a496fb4ba5df07a4afb70/block-v1:IBM+DA0101EN+2T2021+type@vertical+block@58df375527f940ebab6a007dcf504b40)
+--------
+Determining the good model fit.
+How we look it:
+- Predicted values make sense
+- Visualization
+- Numerical measures for evaluation
+- Comparing different models
