@@ -130,3 +130,13 @@ We can also produce a prediction. The method normalizes the data, performs a pol
 pipe.fit(df[['horsepower', 'highway-mpg', 'curb-weight', 'engine-size']], y)
 yhat = pipe.predict(x[['horsepower', 'highway-mpg', 'curb-weight', 'engine-size']])
 ```
+
+## Measures for in-sample evaluation
+----  
+A way to numerical determine how good the model fits the model.
+2 important measures:
+- MSE (Mean Squared Error)
+- R^2 (R-squared): to determine how close to the data is to the fitted regression line. Is the percentage of variation of the target (y) that is explained by the linear model. Coefficient of the Determination R^2 is 1-MSE of the regression line divided by the MSE of the average of the data. It takes values between 0 and 1.
+
+> ![](https://github.com/nereacal/python-data-science/blob/main/analyzing-data/images/Coefficient_of_determination_r2.jpeg)  
+  
