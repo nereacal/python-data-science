@@ -38,9 +38,6 @@ What this function is going do is it is going to partition the spread of the dat
 ------
 Is a type of plot where lenght of each bar is proportional to the values of a variable at a given point of time.
 ```
-import matplotlib as mpl
-import matplotlib.pyplot as plt
-
 df.plot(kind='bar')
 ```
 
