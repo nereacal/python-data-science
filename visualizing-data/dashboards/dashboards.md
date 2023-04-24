@@ -30,3 +30,23 @@ Interactive plotting library. Includes charts types like statistical, financial,
 Plotly submodules:
 - Graph objects: low-level interface to figures, traces and layout.
 - Express: High-level wrapper.
+
+
+## [Dash](https://learning.edx.org/course/course-v1:IBM+DV0101EN+1T2021/block-v1:IBM+DV0101EN+1T2021+type@sequential+block@4a88065df2134adfb8295157a895e1f2/block-v1:IBM+DV0101EN+1T2021+type@vertical+block@520f1680aa354be38ad3e6a0b732c09c)
+------
+Dash applications are web servers running Flask and communicating JSON packets over HTTP requests.
+Dash’s frontend renders components using React.js. It is easy to build a Graphical User Interface
+using dash as it abstracts all technologies required to build the applications.  
+Dash components:
+- Core components
+- HTML components
+  
+
+## [Dash Interactive components](https://learning.edx.org/course/course-v1:IBM+DV0101EN+1T2021/block-v1:IBM+DV0101EN+1T2021+type@sequential+block@84fc4ee3ea1a478d8cca76e57861fbb2/block-v1:IBM+DV0101EN+1T2021+type@vertical+block@738f526d68b24f678248b9823189b7cd)
+------
+A callback function is a python function that is automatically called by Dash whenever an input component's property changes.
+Callback function is decorted and tells whenever there is a change in the input component value.  
+Decorate the callback function with @app.callback decorator.
+This takes two parameters:
+- Output : This sets result returned from the callback function to a component id 
+- Input: This set input provided to the callback function to a component id
